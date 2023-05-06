@@ -5,7 +5,7 @@
  * Return: The numbers since 0 up to 9
  */
 
-void print_number(void)
+void print_numbers(void)
 
 {
 
@@ -13,7 +13,7 @@ void print_number(void)
 
 	for (x = 0; x <= 9; x++)
 	{
-	_putchar(x + '0');
+		_putchar(x + '0');
 	}
 	_putchar('\n');
 }
