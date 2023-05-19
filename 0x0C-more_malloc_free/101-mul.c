@@ -18,7 +18,7 @@ int is_digit(char *s)
 			return (0);
 		i++;
 	}
-	return (1);
+	return(1);
 }
 
 /**
@@ -52,7 +52,7 @@ void errors(void)
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: always 0 (success)
+ * Return: always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
 		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 		{
 			digit2 = s2[len2] - '0';
-			carry += result[len1 +len2 + 1] + (digit1 * digit2);
+			carry += result[len1 + len2 + 1] + (digit1 * digit2);
 			result[len1 + len2 + 1] = carry % 10;
 			carry /= 10;
 		}
